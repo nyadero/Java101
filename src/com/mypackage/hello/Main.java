@@ -2,6 +2,13 @@ package com.mypackage.hello;
 import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
+        constructors.Car mycar = new constructors.Car();
+        System.out.println(mycar.model);
+        mycar.engineRunning();
+
+        People person = new People();
+        System.out.println(person.age);
+        person.hobbies();
         String name = JOptionPane.showInputDialog("what is your name?");
 //        JOptionPane.showMessageDialog(null, "hello " + name);
 
